@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -ex
+
+# This is the master script for the capsule. When you click "Reproducible Run", the code in this file will execute.
+python -u test.py -d cub --load cub_resnet50_4
+
+python -u test.py -d car --load car_resnet50_4
+
+python -u test.py -d air --load air_resnet50_4
